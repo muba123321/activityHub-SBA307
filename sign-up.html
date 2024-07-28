@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ActivityHup - Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="images/logos/favicon.ico" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+    <link rel="stylesheet" href="style.css" />
+  
+  </head>
+  <body>
+
+   
+    
+    <!-- Bootstrap navbar costomised it to suit my project -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a
+        class="navbar-brand"
+        href="#"
+        style="
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          font-weight: 900;
+        "
+        ><img
+          src="images/logos/activityHublogo-small.png"
+          alt=""
+          style="width: 40px; height: 40px; margin-right: 10px"
+        />
+        ActivityHuB</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Welcoming Page</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2" id="searchForm">
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+
+          <span class="col-auto border-0" id="search-addon">
+            <i class="fas fa-search"></i>
+          </span>
+          
+        </form>
+
+        <a
+          class="btn btn-outline-primary ml-2"
+          style="background-color: #002129; color: #ffff"
+          href="#"
+          >Sign In</a
+        >
+      </div>
+    </nav>
+
+    <section class="sectionBody">
+      <div class="signUpFormContainer">
+        <div class="headerIntro">
+          <img src="images/logos/activityHublogo-small.png" alt="Logo" />
+
+          <div>
+            <h2>ActivityHuB</h2>
+            <p>Join us today! Fill out the form below to sign up.</p>
+          </div>
+        </div>
+        <form class="signUpForm" action="reach-us.html">
+          <div class="form-group">
+            <label for="profileImage">Profile Image:</label>
+            <input
+              type="file"
+              id="profileImage"
+              name="profileImage"
+              accept="image/*"
+            />
+          </div>
+          <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="location">Address:</label>
+            <input type="text" id="location" name="location" required />
+          </div>
+          <div class="form-group">
+            <label for="activities">Activities</label>
+            <select name="activities" id="activities" required>
+              <option value="None" selected disabled>None</option>
+              <option value="running">Bowling</option>
+              <option value="cycling">Soccer</option>
+              <option value="swimming">Fishing</option>
+              <option value="hiking">Horse Racing</option>
+              <option value="running">Running</option>
+              <option value="cycling">Cycling</option>
+              <option value="swimming">Swimming</option>
+              <option value="hiking">Hiking</option>
+            </select>
+          </div>
+          <div class="form-group" id="genderselect">
+            <label>Gender</label>
+            <div>
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                required
+              />
+              <label for="male">Male</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+                required
+              />
+              <label for="female">Female</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required />
+          </div>
+          <div class="sign-up-button">
+            <button type="submit"  class="signUp">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+   
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

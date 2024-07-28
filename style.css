@@ -1,0 +1,234 @@
+.sectionBody {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #f2f5f7;
+  border-radius: 16px;
+  box-shadow: hwb(from color 20 30 49);
+  padding: 30px;
+}
+
+#searchForm {
+  display: flex;
+  flex-flow: row;
+}
+
+
+.section2  img, .headerIntro img{ 
+height: 100vh;
+animation: bouncing 1s ease-in-out infinite;
+}
+
+@keyframes bouncing {
+
+    0% {
+        transform: translateY(0px);
+
+    }
+    50%
+    {
+        transform: translateY(-50px);
+    }
+S
+  
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+.reach-label-info img {
+    animation: bouncingcontact 5s ease-in infinite;
+}
+
+
+@keyframes bouncingcontact {
+    100% {
+        transform: rotate(1.0turn);
+    }
+}
+
+
+.signUpFormContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.headerIntro {
+  display: flex;
+  text-align: start;
+  margin-bottom: 40px;
+  align-items: end;
+  border: #002129 1px solid;
+  box-shadow: 10px 10px grey;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.headerIntro img {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+.headerIntro h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 900;
+  color: #002129;
+}
+
+.headerIntro p {
+  color: #006494;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.signUpForm {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#genderselect {
+  width: 20px;
+}
+
+.form-group input[type="file"] {
+  padding: 3px;
+}
+
+.form-group div {
+  display: flex;
+  align-items: center;
+}
+
+.form-group div input {
+  margin-right: 5px;
+}
+
+.sign-up-button  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+
+.signUp, .submitbutton {
+  background-color: #002129;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 20px;
+  height: 90px;
+  width: 180px;
+}
+.submitbutton {height: 60px;}
+
+.signUp:hover, .submitbutton:hover{
+  color: #002129;
+  background-color: #409721;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .signUpFormContainer {
+    width: 90%;
+  }
+
+  .headerIntro {
+    margin-bottom: 15px;
+  }
+
+  .headerIntro h2 {
+    font-size: 20px;
+  }
+
+  .headerIntro p {
+    font-size: 14px;
+  }
+  .reach-mainbody{
+    flex-flow: column;
+  }
+
+  tr {
+    display: flex;
+    flex-flow: column;
+  }
+  
+}
+/* style for reach-us page */
+#search-addon {
+    cursor: pointer;
+    padding: 0 10px;
+    color: #002129;
+  }
+  
+  .badge-notification {
+    position: absolute;
+    top: -2px;
+    right: 10px;
+    font-size: 10px;
+  }
+  
+  .dropdown{
+    margin-left: 20px;
+  }
+
+  .reach-label-info, .reach-form, .team-table{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+ 
+  }
+
+  .reach-mainbody {
+    display: flex;
+  }
+.team-table {
+    margin-top: 20px;
+    align-items: center;
+}
+
+  #reach-sectionBody{
+    flex-flow: column;
+  }
+
+  /* end of style for reach us page */
+

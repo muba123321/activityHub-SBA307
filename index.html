@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ActivityHuB - Landing Page</title>
+    <link rel="icon" type="image/x-icon" href="images/logos/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      .hover-1 {
+        background: linear-gradient(#409721 0 0) var(--p, 0) / var(--p, 0)
+          no-repeat;
+        transition: 0.4s, background-position 0s;
+      }
+      .hover-1:hover {
+        --p: 100%;
+        color: #fff;
+      }
+      .hover-2 {
+        background: linear-gradient(#002129 0 0) no-repeat
+          calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0.08em);
+        transition: 0.3s var(--t, 0s),
+          background-position 0.3s calc(0.3s - var(--t, 0s));
+      }
+      .hover-2:hover {
+        --p: 100%;
+        --t: 0.3s;
+        color: #fff;
+      }
+      .hover-3 {
+        --c: no-repeat linear-gradient(#006494 0 0);
+        background: var(--c) calc(-101% + var(--p, 0%)) 100%,
+          var(--c) calc(201% - var(--p, 0%)) 0;
+        background-size: 50.1% var(--p, 0.08em);
+        transition: 0.3s var(--t, 0s),
+          background-position 0.3s calc(0.3s - var(--t, 0s));
+      }
+      .hover-3:hover {
+        --p: 101%;
+        --t: 0.3s;
+        color: #fff;
+      }
+      .hover-4 {
+        --c: #f1d302;
+        line-height: 1.2em;
+        background: conic-gradient(
+              from -135deg at 100% 50%,
+              var(--c) 90deg,
+              #0000 0
+            )
+            0 var(--p, 0%),
+          conic-gradient(from -135deg at 1.2em 50%, #0000 90deg, var(--c) 0)
+            100% var(--p, 0%);
+        background-size: var(--s, 0%) 200%;
+        background-repeat: no-repeat;
+        transition: 0.4s ease-in, background-position 0s;
+      }
+      .hover-4:hover {
+        --p: 100%;
+        --s: calc(
+          50% + 0.61em
+        ); /* it should be 0.6em(1.2em/2) but we use a litte bigger */
+        color: #fff;
+      }
+
+    
+
+      #getStarted {
+        height: 90px;
+        width: 180px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-weight: 900;
+        font-size: 20px;
+        border: 5px solid;
+
+        /* color: black; */
+        background-color: #002129;
+        border-color: #4284f4;
+        transition-property: color, background-color, border-color;
+        transition-duration: 1s;
+      }
+      #getStarted:hover {
+        color: white;
+        background-color: black;
+        border-color: #ffab40;
+        transform: rotate(180deg);
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Bootstrap navbar costomised it to suit my project -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a
+        class="navbar-brand"
+        href="#"
+        style="
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          font-weight: 900;
+        "
+        ><img
+          src="images/logos/activityHublogo-small.png"
+          alt=""
+          style="width: 40px; height: 40px; margin-right: 10px"
+        />
+        ActivityHuB</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Welcoming Page</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2" id="searchForm">
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <span class="col-auto" style="padding: 0; border: #002129 1px solid">
+            <button
+              class="btn btn-outline-secondary border-left-0 rounded-0 rounded-right"
+              type="button"
+            >
+              <i class="fa fa-search"></i>
+            </button>
+          </span>
+        </form>
+
+        <a class="btn btn-outline-primary ml-2" style="background-color: #002129; color: #ffff;" href="sign-in.html">Sign In</a>
+      </div>
+    </nav>
+
+
+
+    <section class="section1" style="margin-left: 40px">
+      <div>
+        <img
+          src="images/logos/landingpage.gif"
+          alt=""
+          style="width: 100%; display: flex"
+        />
+      </div>
+    </section>
+
+    <hr style="border: 10px solid; color: #f2f5f7; border-radius: 20%" />
+    <section class="section2" style="margin-right: 40px; margin-left: 40px">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div>
+          <h1
+            class="hover-1"
+            style="font-size: 10vmin; font-weight: 900; color: #002129"
+          >
+            Welcome
+          </h1>
+          <h1
+            class="hover-2"
+            style="
+              font-size: 10vmin;
+              font-weight: 900;
+              color: #409721;
+              margin-bottom: 0;
+            "
+          >
+            To ActivityHuB
+          </h1>
+          <p
+            class="hover-3"
+            style="
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
+              font-size: x-large;
+              font-weight: 800;
+              margin-top: 0;
+            "
+          >
+            Your gateway to engaging activities and events.
+          </p>
+          <p
+            class="hover-4"
+            style="
+              font-style: italic;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                serif;
+              font-size: xx-large;
+              color: #006494;
+            "
+          >
+            "Be part of your neighbours memories. CLICK TO -"
+          </p>
+
+          <a href="sign-up.html" class="btn btn-primary" id="getStarted"
+            >GET STARTED
+          </a>
+        </div>
+        
+
+        <img
+          src="images/logos/activityHublogo-small.png"
+          alt="logo"
+          style="display: flex; flex-direction: row; margin-right: 0px" class="indexBouncingLogo"
+        />
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
