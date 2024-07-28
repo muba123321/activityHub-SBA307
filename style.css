@@ -15,42 +15,33 @@
   flex-flow: row;
 }
 
-
-.section2  img, .headerIntro img{ 
-height: 100vh;
-animation: bouncing 1s ease-in-out infinite;
+.section2 img,
+.headerIntro img {
+  height: 100vh;
+  animation: bouncing 1s ease-in-out infinite;
 }
 
 @keyframes bouncing {
-
-    0% {
-        transform: translateY(0px);
-
-    }
-    50%
-    {
-        transform: translateY(-50px);
-    }
-S
-  
-
-    100% {
-        transform: translateY(0px);
-    }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  S 100% {
+    transform: translateY(0px);
+  }
 }
-
 
 .reach-label-info img {
-    animation: bouncingcontact 5s ease-in infinite;
+  animation: bouncingcontact 5s ease-in infinite;
 }
-
 
 @keyframes bouncingcontact {
-    100% {
-        transform: rotate(1.0turn);
-    }
+  100% {
+    transform: rotate(1turn);
+  }
 }
-
 
 .signUpFormContainer {
   background-color: #fff;
@@ -62,7 +53,6 @@ S
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .headerIntro {
@@ -134,15 +124,15 @@ S
   margin-right: 5px;
 }
 
-.sign-up-button  {
+.sign-up-button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
 }
 
-
-.signUp, .submitbutton {
+.signUp,
+.submitbutton {
   background-color: #002129;
   color: #fff;
   padding: 10px 20px;
@@ -154,9 +144,12 @@ S
   height: 90px;
   width: 180px;
 }
-.submitbutton {height: 60px;}
+.submitbutton {
+  height: 60px;
+}
 
-.signUp:hover, .submitbutton:hover{
+.signUp:hover,
+.submitbutton:hover {
   color: #002129;
   background-color: #409721;
   transform: rotate(180deg);
@@ -178,7 +171,7 @@ S
   .headerIntro p {
     font-size: 14px;
   }
-  .reach-mainbody{
+  .reach-mainbody {
     flex-flow: column;
   }
 
@@ -186,49 +179,48 @@ S
     display: flex;
     flex-flow: column;
   }
-  
 }
 /* style for reach-us page */
 #search-addon {
-    cursor: pointer;
-    padding: 0 10px;
-    color: #002129;
-  }
-  
-  .badge-notification {
-    position: absolute;
-    top: -2px;
-    right: 10px;
-    font-size: 10px;
-  }
-  
-  .dropdown{
-    margin-left: 20px;
-  }
-
-  .reach-label-info, .reach-form, .team-table{
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 700px;
-    display: flex;
-    flex-direction: column;
- 
-  }
-
-  .reach-mainbody {
-    display: flex;
-  }
-.team-table {
-    margin-top: 20px;
-    align-items: center;
+  cursor: pointer;
+  padding: 0 10px;
+  color: #002129;
 }
 
-  #reach-sectionBody{
-    flex-flow: column;
-  }
+.badge-notification {
+  position: absolute;
+  top: -2px;
+  right: 10px;
+  font-size: 10px;
+}
 
-  /* end of style for reach us page */
+.dropdown {
+  margin-left: 20px;
+}
 
+.reach-label-info,
+.reach-form,
+.team-table {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reach-mainbody {
+  display: flex;
+}
+.team-table {
+  margin-top: 20px;
+  align-items: center;
+}
+
+#reach-sectionBody {
+  flex-flow: column;
+}
+
+/* end of style for reach us page */
